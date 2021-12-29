@@ -16,6 +16,7 @@
 		84548A6D277CAFAD009EC3BA /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84548A6C277CAFAD009EC3BA /* PersonListViewController.swift */; };
 		84548A6F277CB056009EC3BA /* PersonsInfoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84548A6E277CB056009EC3BA /* PersonsInfoListViewController.swift */; };
 		84548A71277CB99E009EC3BA /* AboutPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84548A70277CB99E009EC3BA /* AboutPersonViewController.swift */; };
+		84548A73277CE4C8009EC3BA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84548A72277CE4C8009EC3BA /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		84548A6C277CAFAD009EC3BA /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
 		84548A6E277CB056009EC3BA /* PersonsInfoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsInfoListViewController.swift; sourceTree = "<group>"; };
 		84548A70277CB99E009EC3BA /* AboutPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPersonViewController.swift; sourceTree = "<group>"; };
+		84548A72277CE4C8009EC3BA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				84548A6C277CAFAD009EC3BA /* PersonListViewController.swift */,
 				84548A6E277CB056009EC3BA /* PersonsInfoListViewController.swift */,
 				84548A70277CB99E009EC3BA /* AboutPersonViewController.swift */,
+				84548A72277CE4C8009EC3BA /* TabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				842A4EC8277B7F0D009C16E8 /* Person.swift in Sources */,
 				842A4EB1277B7367009C16E8 /* SceneDelegate.swift in Sources */,
 				84548A6D277CAFAD009EC3BA /* PersonListViewController.swift in Sources */,
+				84548A73277CE4C8009EC3BA /* TabBarController.swift in Sources */,
 				84548A6F277CB056009EC3BA /* PersonsInfoListViewController.swift in Sources */,
 				84548A71277CB99E009EC3BA /* AboutPersonViewController.swift in Sources */,
 			);
