@@ -17,6 +17,7 @@
 		84548A6F277CB056009EC3BA /* PersonsInfoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84548A6E277CB056009EC3BA /* PersonsInfoListViewController.swift */; };
 		84548A71277CB99E009EC3BA /* AboutPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84548A70277CB99E009EC3BA /* AboutPersonViewController.swift */; };
 		84548A73277CE4C8009EC3BA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84548A72277CE4C8009EC3BA /* TabBarController.swift */; };
+		84548A76277CE9C7009EC3BA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84548A75277CE9C7009EC3BA /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		84548A6E277CB056009EC3BA /* PersonsInfoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsInfoListViewController.swift; sourceTree = "<group>"; };
 		84548A70277CB99E009EC3BA /* AboutPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPersonViewController.swift; sourceTree = "<group>"; };
 		84548A72277CE4C8009EC3BA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		84548A75277CE9C7009EC3BA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		842A4EAD277B7367009C16E8 /* UserInfo */ = {
 			isa = PBXGroup;
 			children = (
+				84548A74277CE998009EC3BA /* Services */,
 				842A4EC6277B7ED0009C16E8 /* Models */,
 				842A4EC2277B7C79009C16E8 /* ViewControllers */,
 				842A4EC4277B7D00009C16E8 /* StoryBoards */,
@@ -117,6 +120,14 @@
 				842A4EC7277B7F0D009C16E8 /* Person.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		84548A74277CE998009EC3BA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84548A75277CE9C7009EC3BA /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				842A4EAF277B7367009C16E8 /* AppDelegate.swift in Sources */,
+				84548A76277CE9C7009EC3BA /* DataManager.swift in Sources */,
 				842A4EC8277B7F0D009C16E8 /* Person.swift in Sources */,
 				842A4EB1277B7367009C16E8 /* SceneDelegate.swift in Sources */,
 				84548A6D277CAFAD009EC3BA /* PersonListViewController.swift in Sources */,
