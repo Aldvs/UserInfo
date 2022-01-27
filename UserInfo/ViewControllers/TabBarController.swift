@@ -10,13 +10,18 @@ import UIKit
 class TabBarController: UITabBarController {
     
     private var personsArray = Person.getPersonsList()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViewControllers()
     }
     
-    private func getDataInTabBar(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let tabBarController = segue.destination as? TabBarController else { return }
-        guard let viewController = tabBarController.viewControllers else { return }
-    
+    private func setupViewControllers() {
+        guard let personsListVC = viewControllers?.first as? PersonsListViewController else { return }
+        guard let personsInfoVC = viewControllers?.last as? PersonsInfoListViewController else { return }
+        
+        personsListVC.persons = personsArray
+        personsInfoVC.persons = personsArray
     }
+    
 }

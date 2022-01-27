@@ -31,7 +31,7 @@
                             <outlet property="delegate" destination="smU-bz-ssw" id="e2i-qU-jxb"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="s5e-PE-exe"/>
+                    <tabBarItem key="tabBarItem" title="Persons Information" image="person.text.rectangle" catalog="system" id="s5e-PE-exe"/>
                     <navigationItem key="navigationItem" title="Person List" id="2C5-gG-1Xq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N7r-zl-pCc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -41,7 +41,7 @@
         <!--Person List-->
         <scene sceneID="X1H-fT-hc3">
             <objects>
-                <tableViewController id="DxE-am-mAc" customClass="PersonListViewController" customModule="UserInfo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="DxE-am-mAc" customClass="PersonsListViewController" customModule="UserInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="NBv-Gp-FqZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,7 +81,7 @@
                             <outlet property="delegate" destination="DxE-am-mAc" id="I8Z-aa-zdG"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="1MC-2l-4kz"/>
+                    <tabBarItem key="tabBarItem" title="Persons List" image="person.3" catalog="system" id="1MC-2l-4kz"/>
                     <navigationItem key="navigationItem" title="Person List" id="jIs-ah-h2l"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uUV-wT-4Je" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -169,6 +169,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.3" catalog="system" width="128" height="62"/>
+        <image name="person.text.rectangle" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
