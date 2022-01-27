@@ -8,6 +8,8 @@
 import UIKit
 
 class PersonListViewController: UITableViewController {
+    
+    var persons: [Person] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
