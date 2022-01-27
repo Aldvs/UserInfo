@@ -19,25 +19,36 @@ struct Person {
 }
 
 extension Person {
-    static func getPersonList(forDataArrays ourArrays: [String]... ) -> [Person] {
-        var persons = [Person]()
-        var object = Person()
+    static func getPersonList() -> [Person] {
         
-        for _ in 1...10 {
-            ourArrays.forEach { Array in
-                switch Array {
-                case DataManager.shared.names:
-                    object.name = Array.randomElement() ?? ""
-                case DataManager.shared.surnames:
-                    object.surname = Array.randomElement() ?? ""
-                case DataManager.shared.emails:
-                    object.email = Array.randomElement() ?? ""
-                default:
-                    object.phone = Array.randomElement() ?? ""
-                }
-            }
-            persons.append(object)
+        var persons: [Person] = []
+        
+        let names = DataManager.shared.names.shuffled()
+        let surnames = DataManager.shared.surnames.shuffled()
+        let emails = DataManager.shared.emails.shuffled()
+        let phones = DataManager.shared.phones.shuffled()
+        
+        let iterationCount = min(
+            names.count,
+            surnames.count,
+            emails.count,
+            phones.count
+        )
+        
+        for index in 0..<iterationCount {
+            let person = Person(
+                name: names[index],
+                surname: surnames[index],
+                email: emails[index],
+                phone: phones[index]
+            )
+            persons.append(person)
         }
         return persons
     }
+}
+
+enum Contacts: String {
+    case phone = "phone.circle"
+    case email = "envelope.circle"
 }
