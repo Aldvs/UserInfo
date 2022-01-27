@@ -9,6 +9,9 @@ import UIKit
 
 class AboutPersonViewController: UIViewController {
     
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    
     var person: Person!
 
     override func viewDidLoad() {
