@@ -19,7 +19,7 @@ class AboutPersonViewController: UIViewController {
         
         title = person.fullName
         phoneLabel.text = "Phone Number: \(person.phone)"
-        emailLabel.text = "Phone Number: \(person.email)"
+        emailLabel.text = "E-mail: \(person.email)"
     }
 
 
